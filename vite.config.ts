@@ -7,6 +7,6 @@ export default defineConfig({
   plugins: [vue(),vueJsx()],
   server: {
     port: 8000,
-    open: true
+    open: '/demo/index.html'
   }
 })
