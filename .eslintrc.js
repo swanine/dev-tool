@@ -1,21 +1,43 @@
 module.exports = {
-  root: true,
   env: {
     browser: true,
-    node: true,
-    jest: true,
-    es6: true
+    es2021: true,
+    node: true
   },
-  plugins: ['@typescript-eslint'],
   extends: [
-    'plugin:@typescript-eslint/recommended',
-    'plugin:vue/vue3-recommended',
-    'plugin:import/recommended',
-    'plugin:import/typescript',
+    'plugin:vue/essential',
+    'airbnb-base',
+    'plugin:prettier/recommended'
   ],
+  parserOptions: {
+    ecmaVersion: 'latest',
+    parser: '@typescript-eslint/parser',
+    sourceType: 'module'
+  },
+  plugins: ['vue', '@typescript-eslint'],
   rules: {
-    '@typescript-eslint/no-var-requires': 0,
-    '@typescript-eslint/no-explicit-any': 0,
-    '@typescript-eslint/explicit-module-boundary-types': 0
+    'import/no-extraneous-dependencies': 0,
+    'import/no-unresolved': 0,
+    'import/extensions': 0,
+    'no-use-before-define': 0,
+    'vue/multi-word-component-names': 0,
+    'vue/no-mutating-props': 1,
+    'import/prefer-default-export': 0,
+    'no-unused-expressions': 0,
+    'no-param-reassign': [
+      'error',
+      {
+        props: true,
+        ignorePropertyModificationsFor: [
+          'e', // for e.returnvalue
+          'ctx', // for Koa routing
+          'req', // for Express requests
+          'request', // for Express requests
+          'res', // for Express responses
+          'response', // for Express responses
+          'state' // for vuex state
+        ]
+      }
+    ]
   }
 }
