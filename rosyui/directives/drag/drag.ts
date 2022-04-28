@@ -1,3 +1,5 @@
+/* eslint-disable no-self-assign */
+/* eslint-disable no-param-reassign */
 import { TVector, TVectorRange, IOptions } from './type/type'
 import {
   getPosition,
@@ -8,10 +10,11 @@ import {
 } from './utils/dragUtils'
 
 const drag = (element: HTMLElement, options?: IOptions) => {
+  // eslint-disable-next-line prefer-const
   let { outerElement, innerElement, onDragStart, onDrag, onDragEnd } =
     options ?? {}
   // 元素的transform属性值，getComputedStyle返回值为matrix3d形式
-  let startTransform = window.getComputedStyle(element).transform
+  const startTransform = window.getComputedStyle(element).transform
 
   // 拖拽开始时的鼠标位置
   let startPosition: TVector | null = null
@@ -66,6 +69,7 @@ const drag = (element: HTMLElement, options?: IOptions) => {
       )
       // 之前的拖拽位移向量+本次的拖拽位移向量
       draggingMoveVector = addVector(draggedMoveVector, currentMoveVector)
+      // eslint-disable-next-line no-param-reassign
       element.style.transform = setTranslatePosition(
         startTransform,
         draggingMoveVector
