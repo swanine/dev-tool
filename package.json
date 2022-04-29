@@ -2,7 +2,7 @@
   "name": "root",
   "private": true,
   "scripts": {
-    "dev": "pnpm dev --filter rosyui",
+    "dev": "pnpm dev --filter rosi-ui",
     "eslint": "eslint \"packages/**/{*.vue,*.js,*.ts,*.jsx,*.tsx}\"",
     "eslint:fix": "eslint --fix \"packages/**/{*.vue,*.js,*.ts,*.jsx,*.tsx}\""
   },
