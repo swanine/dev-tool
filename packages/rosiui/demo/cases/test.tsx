@@ -1,11 +1,12 @@
 import { defineComponent } from 'vue'
+import { RButton } from '../../src/components'
 
 export default defineComponent({
   render() {
     return (
       <>
         <h1>Hello, World!</h1>
-        <SButton>sss</SButton>
+        <RButton theme="primary">sss</RButton>
       </>
     )
   }
