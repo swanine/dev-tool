@@ -8,6 +8,6 @@ export default {
 
     drag(el, bind.value)
     // })
-  },
-  updated(el: HTMLElement, bind: any) {}
+  }
+  // updated(el: HTMLElement, bind: any) {}
 }

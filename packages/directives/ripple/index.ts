@@ -8,6 +8,5 @@ export default {
 
       ripple(event, el)
     })
-  },
-  updated(el: HTMLElement, bind: any) {}
+  }
 }
