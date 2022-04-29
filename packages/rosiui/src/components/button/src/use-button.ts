@@ -1,16 +1,10 @@
 import { computed } from 'vue'
-import type { SetupContext } from 'vue'
-import { ButtonProps, UseButtonReturnType } from './button-types'
+import { RsButtonProps, UseButtonReturnType } from './type'
 
-export default function useButton(
-  props: ButtonProps,
-  ctx: SetupContext
-): UseButtonReturnType {
+export default function useButton(props: RsButtonProps): UseButtonReturnType {
   const classes = computed(() => ({
-    'rosy-button': true,
     [`${props.type}`]: true,
-    [`rosy-button-${props.color}`]: true,
-    [`rosy-button-${props.size}`]: true
+    [`rosy-button-${props.theme}`]: true
   }))
 
   return { classes }

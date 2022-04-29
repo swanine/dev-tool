@@ -1,6 +1,6 @@
 /* 仅做初次测试用例，需重新编写样式文件 */
 
-.rosy-button {
+.r-button {
   padding: 0 20px;
   height: 32px;
   border-radius: 4px;
@@ -10,7 +10,7 @@
   border-width: 1px;
   transition: all 0.26s;
 
-  & + .rosy-button {
+  & + .r-button {
     margin-left: 10px;
   }
 
@@ -26,7 +26,7 @@
     color: #ffffff;
   }
 
-  &-primary {
+  &--primary {
     background-color: #ff466b;
 
     &:hover {
@@ -39,7 +39,7 @@
     }
   }
 
-  &-success {
+  &--success {
     background-color: #67c23a;
 
     &:hover {
@@ -50,5 +50,13 @@
       box-shadow: 0 0 0 2px #55ff0031;
       background-color: #67c23ace;
     }
+  }
+
+  &.is-round {
+    border-radius: 50px;
+  }
+
+  &.is-circle {
+    border-radius: 50%;
   }
 }

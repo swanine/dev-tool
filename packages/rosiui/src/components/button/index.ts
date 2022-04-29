@@ -1,13 +1,7 @@
-import type { App } from 'vue'
-import Button from './src/button'
+import _Button from './src/button'
+import { withInstall, WithInstallType } from '../../utils/withInstall'
 
-export * from './src/button-types'
+export * from './src/type'
 
-export { Button }
-
-export default {
-  title: 'Button 按钮',
-  install(app: App): void {
-    app.component(Button.name, Button)
-  }
-}
+export const RButton: WithInstallType<typeof _Button> = withInstall(_Button)
+export default RButton
