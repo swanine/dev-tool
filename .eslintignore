@@ -1,0 +1,17 @@
+/build/**
+/docs/**
+/demo/**
+LICENSE.md
+.prettierignore
+pnpm-lock.yaml
+pnpm-workspace.yaml
+/dist/*
+.output.js
+/node_modules/**
+
+**/*.svg
+**/*.sh
+
+/public/*
+test.js
+.eslintrc.js

@@ -3,8 +3,9 @@
   "private": true,
   "scripts": {
     "dev": "pnpm dev --filter rosi-ui",
-    "lint": "eslint \"packages/**/{*.vue,*.js,*.ts,*.jsx,*.tsx}\"",
-    "lint:fix": "eslint --fix \"packages/**/{*.vue,*.js,*.ts,*.jsx,*.tsx}\"",
+    "format": "prettier --write ./packages",
+    "lint": "eslint \"packages/**/{*.vue,*.js,*.ts,*.tsx}\"",
+    "lint:fix": "eslint --fix \"packages/**/{*.vue,*.js,*.ts,*.tsx}\"",
     "prepare": "husky install"
   },
   "devDependencies": {
