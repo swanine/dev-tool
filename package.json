@@ -1,6 +1,10 @@
 {
   "name": "root",
   "private": true,
+  "publishConfig": {
+    "registry":"https://npm.pkg.github.com"
+  },
+  "repository": "git+https://github.com/rosi-ui/rosi-ui.git",
   "scripts": {
     "dev": "pnpm dev --filter rosi-ui",
     "format": "prettier --write ./packages",
