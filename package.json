@@ -1,12 +1,12 @@
 {
   "name": "root",
-  "private": true,
   "publishConfig": {
-    "registry":"https://npm.pkg.github.com"
+    "registry": "https://npm.pkg.github.com"
   },
   "repository": "git+https://github.com/rosi-ui/rosi-ui.git",
   "scripts": {
-    "dev": "pnpm dev --filter rosi-ui",
+    "dev": "pnpm dev --filter @rosi-ui/components",
+    "build": "pnpm build --filter @rosi-ui/components",
     "format": "prettier --write ./packages",
     "lint": "eslint \"packages/**/{*.vue,*.js,*.ts,*.tsx}\"",
     "lint:fix": "eslint --fix \"packages/**/{*.vue,*.js,*.ts,*.tsx}\"",
