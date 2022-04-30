@@ -30,6 +30,7 @@ module.exports = {
         props: true,
         ignorePropertyModificationsFor: [
           'e', // for e.returnvalue
+          'el',
           'ctx', // for Koa routing
           'req', // for Express requests
           'request', // for Express requests
