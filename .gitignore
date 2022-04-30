@@ -11,6 +11,7 @@ node_modules
 dist
 dist-ssr
 *.local
+rosi-ui
 
 # Editor directories and files
 .vscode/*
