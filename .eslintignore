@@ -8,6 +8,7 @@ pnpm-workspace.yaml
 /dist/*
 .output.js
 /node_modules/**
+rosi-ui
 
 **/*.svg
 **/*.sh
