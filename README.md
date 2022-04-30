@@ -19,12 +19,12 @@ Rosi is an early incubation project, developed using Vue3 + Vite + TSX
 
 ## 🔨: Install
 
-#### Npm
+#### pnpm
 ```sh
 pnpm install rosi-ui
 ```
 
-#### Yarn
+#### yarn
 
 ```sh
 yarn add rosi-ui
