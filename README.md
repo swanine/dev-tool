@@ -1,3 +1,8 @@
+<p>
+  <img src="https://raw.githubusercontent.com/rosi-ui/rosi-ui/dev-swanine/packages/rosiui/public/rosi-logo.png" width="200">
+</p>
+
+
 <h1 align="center">Rosi</h1>
 
 <div align="center">
@@ -8,16 +13,21 @@
 </div>
 
 <p align="center">
-This is an early incubation project, developed using Vue3 + Vite + TSX
+Rosi is an early incubation project, developed using Vue3 + Vite + TSX
 <br />
 </p>
 
 ## 🔨: Install
 
+#### Npm
 ```sh
-pnpm install
+pnpm install rosi-ui
+```
 
-pnpm run dev
+#### Yarn
+
+```sh
+yarn add rosi-ui
 ```
 
 ## 🧩: Structure
@@ -25,3 +35,11 @@ pnpm run dev
 ```
 in the building
 ```
+
+## :dart: Supported Browsers
+
+Since Vue 3 no longer supports IE11, Rosi no longer supports Internet Explorer
+
+| [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/edge/edge_48x48.png" alt="IE / Edge" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>Edge | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/firefox/firefox_48x48.png" alt="Firefox" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>Firefox | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/chrome/chrome_48x48.png" alt="Chrome" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>Chrome | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/safari/safari_48x48.png" alt="Safari" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/)</br>Safari |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| Edge ≥ 79                                                    | Firefox ≥ 78                                                 | Chrome ≥ 64                                                  | Safari ≥ 12                                                  |
