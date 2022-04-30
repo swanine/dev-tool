@@ -1,5 +1,5 @@
 {
-  "name": "rosi-ui",
+  "name": "@rosi-ui/components",
   "version": "0.0.0-dev.1",
   "description": "This is an early incubation project",
   "keywords": [
@@ -9,9 +9,10 @@
     "vue"
   ],
   "scripts": {
-    "dev": "vite"
+    "dev": "vite",
+    "build": "vite build",
+    "build:tsc-es": "tsc src/ --emitDeclarationOnly -d --outDir es/"
   },
-  "keywords": [],
   "license": "MIT",
   "dependencies": {
     "vue": "^3.2.33"

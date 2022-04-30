@@ -16,5 +16,14 @@ export default defineConfig({
     port: 8001,
     open: true,
     cors: true
+  },
+  build: {
+    outDir: 'rosi-ui/dist',
+    lib: {
+      entry: './src/index.ts',
+      name: 'RosiUi',
+      fileName: (format) => `rosi-ui.${format}.js`,
+      formats: ['es', 'umd']
+    }
   }
 })
