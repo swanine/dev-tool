@@ -1,3 +1,5 @@
+/* eslint-disable no-param-reassign */
+/* eslint-disable prefer-const */
 import { TVector, TVectorRange, IOptions } from './type/type'
 import {
   getPosition,
@@ -29,7 +31,7 @@ const drag = (element: HTMLElement, options?: IOptions) => {
   // 拖拽范围元素
   outerElement = outerElement ?? document.body
   // 拖拽的元素
-  element = element
+  // element = element
   // 拖拽图标元素
   innerElement = innerElement ?? element
 

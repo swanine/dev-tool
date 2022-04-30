@@ -9,7 +9,7 @@ export const withInstall = <T>(comp: T, customName?: string): T & Plugin => {
     const defaultName = c.name.includes('-mapprops')
       ? c.name.replace('-mapprops', '')
       : c.name // 正确命名map-props的组件
-    app.component(customName || name || defaultName, comp)
+    app.component(customName || name || defaultName)
   }
 
   return c as T & Plugin

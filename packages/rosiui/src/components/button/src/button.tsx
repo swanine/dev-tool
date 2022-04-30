@@ -3,7 +3,6 @@ import type { SetupContext } from 'vue'
 import { usePrefixClass, useClassName } from '../../../hooks'
 import { RsButtonProps } from './type'
 import { buttonProps } from './props'
-import useButton from './use-button'
 import './button.scss'
 
 export default defineComponent({
@@ -28,8 +27,8 @@ export default defineComponent({
       SIZE.value[props.size!],
       {
         [STATUS.value.disabled]: disabled?.value,
-        ['is-round']: round?.value,
-        ['is-circle']: circle?.value
+        'is-round': round?.value,
+        'is-circle': circle?.value
       }
     ])
 
