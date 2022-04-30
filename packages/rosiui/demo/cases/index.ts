@@ -1,9 +1,9 @@
-import Test from './test'
+import Button from './Button.vue'
 
 export default [
   {
-    path: '/test',
-    name: 'Test',
-    component: Test
+    path: '/button',
+    name: 'Button',
+    component: Button
   }
 ]

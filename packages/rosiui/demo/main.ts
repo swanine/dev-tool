@@ -1,7 +1,7 @@
 import { createApp } from 'vue'
 import App from './App'
 import router from './router'
-import { RButton } from '../src/components/index'
+import Rosi from '../src/index'
 
-const ROSY = createApp(App)
-ROSY.use(router).use(RButton).mount('#app')
+const ROSI = createApp(App)
+ROSI.use(router).use(Rosi).mount('#app')
