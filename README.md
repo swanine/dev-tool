@@ -17,6 +17,14 @@ Rosi is an early incubation project, developed using Vue3 + Vite + TSX
 <br />
 </p>
 
+English | <a href="README.zh-CN.md">简体中文</a>
+
+## ✨ Features：
+- 🎨 **Beautiful Components** - Beautifully designed components come right out of the box for rapid prototyping.
+- 🔑 **TypeScript** - Rosi is written using TSX
+- ⚡ Support for on-demand import.
+
+
 ## 🔨: Install
 
 #### pnpm
@@ -29,6 +37,28 @@ pnpm install rosi-ui
 ```sh
 yarn add rosi-ui
 ```
+
+## 🔧 Usage
+
+Then import `RosiUi` in the `main.ts` file:
+
+```ts
+import { createApp } from 'vue'
+import App from './App.vue'
+// Import Vue RosiUi component and style
+import RosiUi from 'rosi-ui'
+import 'rosi-ui/style.css'
+createApp(App).use(RosiUi).mount('#app')
+```
+
+Then you can use the vue rosiui component(such as `<r-button>`) in the `App.vue` file:
+
+```vue
+<template>
+  <r-button>Hi Rosi</r-button>
+</template>
+```
+
 
 ## 🧩: Structure
 
