@@ -1,5 +1,5 @@
-<p>
-  <img src="https://raw.githubusercontent.com/rosi-ui/rosi-ui/dev-swanine/packages/rosiui/public/rosi-logo.png" width="200">
+<p align="center">
+  <img src="https://raw.githubusercontent.com/rosi-ui/rosi-ui/dev-swanine/packages/rosiui/public/rosi-logo.png" width="150">
 </p>
 
 
