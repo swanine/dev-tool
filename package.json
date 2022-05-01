@@ -12,6 +12,11 @@
     "lint:fix": "eslint --fix \"packages/**/{*.vue,*.js,*.ts,*.tsx}\"",
     "prepare": "husky install"
   },
+  "dependencies": {
+    "@rosi-ui/rosiui-theme": "workspace:*",
+    "@rosi-ui/components": "workspace:*",
+    "@rosi-ui/directives": "workspace:*"
+  },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.21.0",
     "@typescript-eslint/parser": "^5.21.0",

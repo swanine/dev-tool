@@ -4,6 +4,9 @@ importers:
 
   .:
     specifiers:
+      '@rosi-ui/components': workspace:*
+      '@rosi-ui/directives': workspace:*
+      '@rosi-ui/rosiui-theme': workspace:*
       '@typescript-eslint/eslint-plugin': ^5.21.0
       '@typescript-eslint/parser': ^5.21.0
       eslint: ^8.14.0
@@ -12,8 +15,13 @@ importers:
       eslint-plugin-import: ^2.25.2
       eslint-plugin-prettier: ^4.0.0
       eslint-plugin-vue: ^8.7.1
+      husky: ^7.0.0
       prettier: ^2.6.2
       typescript: ^4.6.3
+    dependencies:
+      '@rosi-ui/components': link:packages/rosiui
+      '@rosi-ui/directives': link:packages/directives
+      '@rosi-ui/rosiui-theme': link:packages/rosiui-theme
     devDependencies:
       '@typescript-eslint/eslint-plugin': 5.21.0_829e74f28e9c9eb05edda582d47d45b8
       '@typescript-eslint/parser': 5.21.0_eslint@8.14.0+typescript@4.6.3
@@ -23,8 +31,12 @@ importers:
       eslint-plugin-import: 2.26.0_eslint@8.14.0
       eslint-plugin-prettier: 4.0.0_665eb419c9d7860ca0c224f7f6dcdace
       eslint-plugin-vue: 8.7.1_eslint@8.14.0
+      husky: 7.0.4
       prettier: 2.6.2
       typescript: 4.6.3
+
+  packages/directives:
+    specifiers: {}
 
   packages/rosiui:
     specifiers:
@@ -46,6 +58,12 @@ importers:
       vite: 2.9.6_sass@1.51.0
       vue-router: 4.0.14_vue@3.2.33
       vue-tsc: 0.34.10_typescript@4.6.3
+
+  packages/rosiui-theme:
+    specifiers: {}
+
+  packages/rosiui/rosi-ui:
+    specifiers: {}
 
 packages:
 
@@ -1696,6 +1714,12 @@ packages:
   /html-tags/3.2.0:
     resolution: {integrity: sha512-vy7ClnArOZwCnqZgvv+ddgHgJiAFXe3Ge9ML5/mBctVJoUoYPCdxVucOywjDARn6CVoh3dRSFdPHy2sX80L0Wg==}
     engines: {node: '>=8'}
+    dev: true
+
+  /husky/7.0.4:
+    resolution: {integrity: sha512-vbaCKN2QLtP/vD4yvs6iz6hBEo6wkSzs8HpRah1Z6aGmF2KW5PdYuAd7uX5a+OyBZHBhd+TFLqgjUgytQr4RvQ==}
+    engines: {node: '>=12'}
+    hasBin: true
     dev: true
 
   /ignore/5.2.0:
