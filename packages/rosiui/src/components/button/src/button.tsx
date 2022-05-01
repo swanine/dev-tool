@@ -3,7 +3,6 @@ import type { SetupContext } from 'vue'
 import { usePrefixClass, useClassName } from '../../../hooks'
 import { RsButtonProps } from './type'
 import { buttonProps } from './props'
-import './button.scss'
 
 export default defineComponent({
   name: 'RButton',
@@ -11,7 +10,7 @@ export default defineComponent({
   emits: ['click'],
   setup(props: RsButtonProps, ctx: SetupContext) {
     const COMPONENT_NAME = usePrefixClass('button')
-    const { SIZE, STATUS } = useClassName('button')
+    const { SIZE } = useClassName('button')
 
     const { disabled, round, circle, theme } = toRefs(props)
 
@@ -26,7 +25,7 @@ export default defineComponent({
       `${COMPONENT_NAME.value}--${props.type}`,
       SIZE.value[props.size!],
       {
-        [STATUS.value.disabled]: disabled?.value,
+        'is-disabled': disabled?.value,
         'is-round': round?.value,
         'is-circle': circle?.value
       }
