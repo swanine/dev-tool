@@ -1,0 +1,87 @@
+// 前缀
+$prefix: r;
+
+// 基础颜色
+$brand-color: var(--rosiui-brand, #ff466b);                        // 主题色
+$primary-color: var(--rosiui-primary, #2972fa);                    // 原色
+$success-color: var(--rosiui-success, #0dd157);                    // 成功
+$warning-color: var(--rosiui-warning, #fab633);                    // 警告
+$error-color: var(--rosiui-error, #fb4143);                        // 失败
+
+// 状态 主题色
+$brand-color-hover: var(--rosiui-brand-hover, #f03d4d);            // hover态
+$brand-color-focus: var(--rosiui-brand-focus, #ff466b);            // focus态，包括鼠标和键盘
+$brand-color-active: var(--rosiui-brand-active, #f03d4d);          // 点击态
+$brand-color-disabled: var(--rosiui-brand-disabled, #fc7a94);      // 禁用态
+$brand-color-light: var(--rosiui-brand-light, #f03d4d80);          // 浅色的选中态
+
+// 状态 原色
+$primary-color-hover: var(--rosiui-primary-hover, #1062f9);        // hover态
+$primary-color-focus: var(--rosiui-primary-focus, #2972fa);        // focus态，包括鼠标和键盘
+$primary-color-active: var(--rosiui-primary-active, #2972fa);      // 点击态
+$primary-color-disabled: var(--rosiui-primary-disabled, #8fb4f9);  // 禁用态
+$primary-color-light: var(--rosiui-primary-light, #2972fa80);        // 浅色的选中态
+
+// 状态 成功
+$success-color-hover: var(--rosiui-success-hover, #0cb94d);        // hover态
+$success-color-focus: var(--rosiui-success-focus, #0dd157);        // focus态，包括鼠标和键盘
+$success-color-active: var(--rosiui-success-active, #0dd157);      // 点击态
+$success-color-disabled: var(--rosiui-success-disabled, #6ad091);  // 禁用态
+$success-color-light: var(--rosiui-success-light, #0dd15780);        // 浅色的选中态
+
+// 状态 警告
+$warning-color-hover: var(--rosiui-warning-hover, #f9ad1a);        // hover态
+$warning-color-focus: var(--rosiui-warning-focus, #f9a90e);        // focus态，包括鼠标和键盘
+$warning-color-active: var(--rosiui-warning-active, #f9a90e);      // 点击态
+$warning-color-disabled: var(--rosiui-warning-disabled, #f8cd77);  // 禁用态
+$warning-color-light: var(--rosiui-warning-light, #f9a90e80);        // 浅色的选中态
+
+// 状态 失败
+$error-color-hover: var(--rosiui-error-hover, #eb0507);            // hover态
+$error-color-focus: var(--rosiui-error-focus, #f1393c);            // focus态，包括鼠标和键盘
+$error-color-active: var(--rosiui-error-active, #f1393c);          // 点击态
+$error-color-disabled: var(--rosiui-error-disabled, #f57779);      // 禁用态
+$error-color-light: var(--rosiui-error-light, #f1393c80);            // 浅色的选中态
+
+// 字体
+$text-color: var(--rosiui-text, #313233);                          // 文本
+$text-weak: var(--rosiui-text-weak, #575d6c);           // 灰度弱化文本
+$aide-text: var(--rosiui-aide-text, #8a8e99);           // 辅助文本、帮助信息（面包屑）
+
+// Font
+$font-size: 10px;
+$font-size-s: $font-size * 1.2; // 字号-五级字号
+$font-size-base: $font-size * 1.4; // 字号-四级字号
+$font-size-l: $font-size * 1.6; // 字号-三级字号
+$font-size-xl: $font-size * 2; // 字号-二级字号
+$font-size-xxl: $font-size * 3.6; // 字号-一级字号
+
+// Line Height
+$text-line-height: 1.5; // 行高-常规
+$text-line-height-s: 20px; // 行高-对应五级文字
+$text-line-height-base: 22px; // 行高-对应四级文字
+$text-line-height-l: 24px; // 行高-对应三级文字
+$text-line-height-xl: 28px; // 行高-对应二级文字
+$text-line-height-xxl: 44px; //行高-对应一级文字
+
+// 边框
+$border-color: var(--rosiui-border-color, #dee2e6);
+$border-color-active: var(--rosiui-border-color, #d3d7db);
+
+// 圆角
+$border-radius: 4px; // 圆角-全局
+$border-radius-50: 50%; // 圆角-全圆角
+
+// 动画
+$anim-time-fn-easing: cubic-bezier(.38, 0, .24, 1);
+$anim-time-fn-ease-out: cubic-bezier(0, 0, .15, 1);
+$anim-time-fn-ease-in: cubic-bezier(.82, 0, 1, .9);
+$anim-duration-base: .2s;
+$anim-duration-moderate: .24s;
+$anim-duration-slow: .28s;
+
+// 其他
+$placeholder-color: var(--rosiui-placeholder);                   // 占位符
+$link-color: var(--rosiui-link-color, #5e5cc7);                // 链接
+$shadow-color: var(--rosiui-shadow, rgba(#252b3a, 0.2));       // 阴影色
+$light-shadow: var(--rosiui-light-shadow, rgba(#252b3a, 0.1)); // 弱化阴影色
