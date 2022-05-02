@@ -1,4 +1,5 @@
 @use 'sass:map';
+@use 'sass:color';
 @use './function.scss' as *;
 
 @mixin getSelector($map, $selector) {
@@ -6,8 +7,29 @@
 
   @each $item in $list {
     .#{joinSelectorName($selector, $item)} {
-      width: 100px;
       background-color: map.get($map, $item);
+
+      &:hover {
+        background-color: getCssVar($item, 'hover');
+      }
+
+      &:active {
+        background-color: getCssVar($item, 'active');
+      }
+
+      &:focus {
+        background-color: getCssVar($item, 'focus');
+        box-shadow: 0 0 0 2px getCssVar($item, 'light');
+      }
+
+      &:disabled {
+        background-color: getCssVar($item, 'disabled');
+      }
     }
   }
+}
+
+@mixin getStateColor($state, $color) {
+  $name: $state-prefix + $state;
+  background-color: $color;
 }
