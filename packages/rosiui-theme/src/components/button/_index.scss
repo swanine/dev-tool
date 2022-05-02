@@ -1,9 +1,24 @@
 // button
 
 @use 'sass:map';
-@use '../../mixins/mixins' as *;
+@use '../../mixins/mixins'as *;
 @use '../../core/var';
 @use '../../theme/index';
 
 
-@include getSelector(var.$colors, button)
+@include getSelector(var.$colors, button);
+
+.r-button {
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  padding: 4px 16px;
+  line-height: 30px;
+  cursor: pointer;
+  color: #fff;
+  transition: all .2s linear;
+
+  & + .r-button {
+    margin-left: 12px;
+  }
+}
