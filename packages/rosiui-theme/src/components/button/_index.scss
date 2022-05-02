@@ -1,66 +1,9 @@
-@import '../../base.scss';
+// button
 
-.r-button {
-  padding: 0 20px;
-  height: 32px;
-  border-radius: 4px;
-  background-color: transparent;
-  overflow: hidden;
-  font-size: $font-size-base;
-  outline: none;
-  border-width: 1px;
-  border-style: solid;
-  border-color: $brand-color;
-  cursor: pointer;
-  border-radius: $border-radius;
-  transition: all $anim-duration-moderate linear;
-  user-select: none;
-  touch-action: manipulation;
+@use 'sass:map';
+@use '../../mixins/mixins' as *;
+@use '../../core/var';
+@use '../../theme/index';
 
-  & + .r-button {
-    margin-left: 10px;
-  }
 
-  &:disabled {
-    cursor: not-allowed;
-  }
-
-  &.default {
-    color: #ffffff;
-  }
-
-  &--primary {
-    background-color: $primary-color;
-    border-color: $primary-color;
-
-    &:hover {
-      background-color: $primary-color-hover;
-    }
-
-    &:focus {
-      box-shadow: 0 0 0 2px $primary-color-light;
-      background-color: $primary-color-focus;
-    }
-  }
-
-  &--success {
-    background-color: #67c23a;
-
-    &:hover {
-      background-color: #67c23ace;
-    }
-
-    &:focus {
-      box-shadow: 0 0 0 2px #55ff0031;
-      background-color: #67c23ace;
-    }
-  }
-
-  &.is-round {
-    border-radius: 50px;
-  }
-
-  &.is-circle {
-    border-radius: 50%;
-  }
-}
+@include getSelector(var.$colors, button)
