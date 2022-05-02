@@ -1,3 +1,2 @@
-@import './normalize';
-@import './reset';
-@import './variables';
+@forward "./color.scss";
+@forward "./common";

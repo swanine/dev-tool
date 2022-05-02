@@ -1,3 +1,3 @@
-@import './components/_index.scss';
-@import './core/_index.scss';
-@import './theme/_index.scss';
+@use "./components/_index.scss";
+@use "./core/_index.scss";
+@use "./theme/_index.scss";

@@ -1,0 +1,16 @@
+// common variables
+@use './variables' as *;
+
+$colors: (
+  "primary": $primary-color,
+  "success": $success-color,
+  "warning": $warning-color,
+  "danger": $error-color,
+  // "light": $rosiui-light,
+  // "dark": $rosiui-dark,
+  // "link": $rosiui-link,
+  // "link-dark": $rosiui-link-dark,
+  // "info": $rosiui-info,
+  // "black": $rosiui-black,
+  // "white": $rosiui-white,
+);

@@ -1,0 +1,36 @@
+@use "sass:map";
+@use "sass:math";
+@use "sass:list";
+@use "color";
+@use "size";
+
+$default-config: ( // button sizes
+  button-sizes: (
+    size.$small: (
+      padding: 0 0.5rem,
+      font-size: 50%,
+    ),
+    size.$default: (
+      padding: 0.25rem 1rem,
+      font-size: 70%,
+    ),
+    size.$large: (
+      padding: 0.5rem 1.5rem,
+      font-size: 90%,
+    )),
+  colors: (
+    semantic: (
+      "primary": color.$rosiui-primary,
+      "success": color.$rosiui-success,
+      "warning": color.$rosiui-warning,
+      "danger": color.$rosiui-danger,
+      "light": color.$rosiui-light,
+      "dark": color.$rosiui-dark,
+      "link": color.$rosiui-link,
+      "link-dark": color.$rosiui-link-dark,
+      "info": color.$rosiui-info,
+      "black": color.$rosiui-black,
+      "white": color.$rosiui-white,
+    ),
+  )
+);
