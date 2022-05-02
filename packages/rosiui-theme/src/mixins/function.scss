@@ -1,0 +1,24 @@
+@use 'config';
+
+// @function joinSelectorName($list) {
+//   $name: config.$double-separator + config.$prefix;
+//   @each $item in $list {
+//     @if $item != '' {
+//       $name: $name + config.$separator + $item;
+//     }
+//   }
+//   @return $name;
+// }
+
+
+// joinSelectorName(('button')) => 'r-button'
+// joinSelectorName(('button', 'text-color')) => 'r-button--text-color'
+@function joinSelectorName($selector, $suffix: '') {
+  $name: config.$prefix + config.$separator + $selector;
+
+  @if $suffix !='' {
+    $name: $name + config.$double-separator + $suffix;
+  }
+
+  @return $name;
+}
