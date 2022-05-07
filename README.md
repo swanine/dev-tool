@@ -12,10 +12,11 @@
 
 </div>
 
-<p align="center">
-Rosi is an early incubation project, developed using Vue3 + Vite + TSX
-<br />
-</p>
+<div align="center">
+
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Montserrat&multiline=true&height=55&lines=Rosi+is+an+early+incubation+project;developed+using+Vue3+%2B+Vite+%2B+TSX)](https://git.io/typing-svg)
+ 
+</div>
 
 English | <a href="README.zh-CN.md">简体中文</a>
 
