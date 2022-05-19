@@ -20,13 +20,13 @@
 
 English | <a href="README.zh-CN.md">简体中文</a>
 
-## ✨ Features：
+## ✨ Features
 - 🎨 **Beautiful Components** - Beautifully designed components come right out of the box for rapid prototyping.
 - 🔑 **TypeScript** - Rosi is written using TSX
 - ⚡ Support for on-demand import.
 
 
-## 🔨: Install
+## 🔨 Install
 
 #### pnpm
 ```sh
@@ -61,13 +61,13 @@ Then you can use the vue rosiui component(such as `<r-button>`) in the `App.vue`
 ```
 
 
-## 🧩: Structure
+## 🧩 Structure
 
 ```
 in the building
 ```
 
-## :dart: Supported Browsers
+## :dart Supported Browsers
 
 Since Vue 3 no longer supports IE11, Rosi no longer supports Internet Explorer
 
