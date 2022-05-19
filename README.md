@@ -67,7 +67,7 @@ Then you can use the vue rosiui component(such as `<r-button>`) in the `App.vue`
 in the building
 ```
 
-## :dart Supported Browsers
+## 🎯 Supported Browsers
 
 Since Vue 3 no longer supports IE11, Rosi no longer supports Internet Explorer
 
