@@ -60,7 +60,6 @@ Then you can use the vue rosiui component(such as `<r-button>`) in the `App.vue`
 </template>
 ```
 
-
 ## 🧩 Structure
 
 ```
