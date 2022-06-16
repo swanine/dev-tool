@@ -1,14 +1,13 @@
 /* 仅做初次测试用例，需重新编写样式文件 */
 
 .rosy-button {
-  padding: 0 20px;
-  height: 32px;
+  padding: 12px 20px;
   border-radius: 4px;
   background-color: transparent;
   outline: none;
   border: none;
   border-width: 1px;
-  transition: all 0.26s;
+  transition: background-color 0.26s, box-shadow 0.26s;
 
   & + .rosy-button {
     margin-left: 10px;

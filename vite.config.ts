@@ -4,9 +4,10 @@ import vueJsx from '@vitejs/plugin-vue-jsx'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [vue(),vueJsx()],
+  plugins: [vue(), vueJsx()],
+  base: './',
   server: {
     port: 8000,
-    open: '/demo/index.html'
+    open: true
   }
 })
