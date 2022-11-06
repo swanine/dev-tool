@@ -11,7 +11,7 @@ export default defineComponent({
             return (
               <li>
                 <RouterLink to={router}>
-                  {index} - {router.name}
+                  {index + 1} - {router.name}
                 </RouterLink>
               </li>
             )
